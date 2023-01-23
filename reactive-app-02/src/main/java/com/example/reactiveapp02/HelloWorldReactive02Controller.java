@@ -12,7 +12,7 @@ public class HelloWorldReactive02Controller {
 
     public Mono<ServerResponse> execute(ServerRequest request) {
         Mono<String> publisher = Mono.just("hello-world from reactive-app-02")
-                .delayElement(Duration.ofSeconds(2));
+                .delayElement(Duration.ofSeconds(5));
         return ServerResponse.ok().body(publisher, String.class);
     }
 }

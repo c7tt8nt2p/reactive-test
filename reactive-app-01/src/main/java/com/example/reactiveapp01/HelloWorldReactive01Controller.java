@@ -15,7 +15,7 @@ public class HelloWorldReactive01Controller {
     @Autowired
     public HelloWorldReactive01Controller(WebClient.Builder webClientBuilder) {
         this.webClient = WebClient.builder()
-                .baseUrl("http://localhost:9002")
+                .baseUrl("http://localhost:7002")
                 .build();
     }
 

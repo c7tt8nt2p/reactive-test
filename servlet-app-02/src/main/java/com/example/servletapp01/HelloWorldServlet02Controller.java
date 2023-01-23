@@ -9,7 +9,7 @@ public class HelloWorldServlet02Controller {
 
     @GetMapping("/hello-world")
     public ResponseEntity<String> helloWorld() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         return ResponseEntity.ok("hello-world from servlet-app-02");
     }
 
